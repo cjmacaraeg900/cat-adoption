@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center">
+        <div class="inline-block mr-2">
+          <img src="images/logo.svg" height="30px" width="30px" />
+        </div>
+        <div class="inline-block mr-2">
+          <img src="images/logo.svg" height="30px" width="30px" />
+        </div>
+      </a>
+      <div class="flex md:order-2">
+        <button
+        class="select-none rounded-full bg-teal-600 py-2 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-600/20 transition-all hover:shadow-lg hover:shadow-green-600/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        type="button"
+        data-ripple-light="true"
+      >
+       Donate Now
+      </button>
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-700 md:p-0">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-700 md:p-0">About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-700 md:p-0">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-700 md:p-0">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    
+    <div class="mx-auto max-w-screen">
+      <div
+        class="relative mb-12 flex flex-col overflow-hidden bg-white bg-clip-border text-gray-700 shadow-md"
+      >
+        <img
+          alt="cat"
+          class="h-[28rem] w-full object-cover object-center z-0"
+          src="https://images.pexels.com/photos/4547416/pexels-photo-4547416.jpeg?cs=srgb&dl=pexels-chtak-4547416.jpg&fm=jpg"
+        />
+
+        <p class="centered text-white heading-text mb-2 block font-sans text-3xl xl:text-6xl lg:text-6xl md:text-5xl font-extrabold leading-[1.3] tracking-normal text-gray-900 antialiased heading-text">Donate & Save a Cat in Your Area <br> <span>
+          <button
+          class="select-none rounded-full bg-teal-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          type="button"
+          data-ripple-light="true"
+        >
+         Donate Now
+        </button>
+      </span>
+    </p>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div
+      class="container mx-auto grid grid-cols-1 gap-8 mt-8 xl:mt-3 xl:gap-12 md:grid-cols-2 xl:grid-cols-3"
+    >
+      <div
+        class="relative flex-row-lg w-96 rounded-xl bg-white bg-clip-border text-gray-700 shadow-md container mx-auto"
+      >
+        <div class="p-6">
+          <h5
+            class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-teal-600 antialiased text-center"
+          >
+            What we do
+          </h5>
+          <p
+            class="block font-sans text-base font-light leading-relaxed text-inherit antialiased text-center"
+          >
+            We are a small group of volunteers who fooster the cats we rescue
+          </p>
+        </div>
+        <div class="p-6 pt-0 text-center">
+          <button
+            class="select-none rounded-lg bg-teal-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-600/20 transition-all hover:shadow-lg hover:shadow-green-600/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button"
+            data-ripple-light="true"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="relative flex-row w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md container mx-auto"
+      >
+        <div class="p-6 text-center">
+          <h5
+            class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-teal-600 antialiased text-center"
+          >
+            Donate
+          </h5>
+          <p
+            class="block font-sans text-base font-light leading-relaxed text-inherit antialiased text-center"
+          >
+            Be an advocate for humane spay/neuter. A small donation goes along way
+          </p>
+        </div>
+        <div class="p-6 pt-0 text-center">
+          <button
+            class="select-none rounded-lg bg-teal-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-600/20 transition-all hover:shadow-lg hover:shadow-green-600/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button"
+            data-ripple-light="true"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="relative flex-row w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md container mx-auto"
+      >
+        <div class="p-6">
+          <h5
+            class="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-teal-600 antialiased text-center"
+          >
+            Adoption
+          </h5>
+          <p
+            class="block font-sans text-base font-light leading-relaxed text-inherit antialiased text-center"
+          >
+         Help cats live longer. They deserve love and care from you.
+          </p>
+        </div>
+        <div class="p-6 pt-0 text-center">
+          <button
+            class="select-none rounded-lg bg-teal-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-600/20 transition-all hover:shadow-lg hover:shadow-green-600/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button"
+            data-ripple-light="true"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="my-20">
+      <div class="mybackground-a py-5">
+        <h2
+          class="mb-2 block font-sans text-4xl xl:text-6xl lg:text-6xl md:text-5xl font-extrabold leading-[1.3] tracking-normal text-gray-900 antialiased heading-text text-center"
+        >
+          Get to know us
+        </h2>
+        <div class="w-5/6 xl:w-3/6 lg:w-3/6 md:w-4/6 sm:w-3/6 mx-auto my-5">
+          <p
+            class="font-sans text-base font-normal leading-relaxed text-gray-700 antialiased text-center"
+          >
+            We know pet adoption because we're adopters too. We think it's just
+            about the best thing you can do. So we're making it easier with the
+            tools, advice, and transparency you need—from the first search
+            through to daily life as a pet parent.
+          </p>
+
+          <p
+            class="font-sans text-base font-normal leading-relaxed text-gray-700 antialiased text-center mt-3"
+          >
+            We'll do whatever it takes to help thousands of people and pets find
+            each other.
+          </p>
+          <p
+            class="font-sans text-base font-normal leading-relaxed text-gray-700 antialiased text-center"
+          >
+            Ready to find your pet? Let's do it!
+          </p>
+
+          <div class="p-6 pt-0 text-center mt-8">
+            <button
+              class="select-none rounded-full bg-teal-600 py-6 px-9 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-600/20 transition-all hover:shadow-lg hover:shadow-green-600/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"
+              data-ripple-light="true"
+            >
+              How it Works
+            </button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Top Features -->
+    <section class="bg-white ">
+      <div class="container px-6 mb-5 mx-auto ">
+          <h1 class="mb-2 block font-sans text-3xl xl:text-6xl lg:text-6xl md:text-5xl font-extrabold leading-[1.3] tracking-normal text-gray-900 antialiased heading-text text-center">Featured Cats</h1>
+  
+          <p class="w-3/6 mx-auto my-6 text-center ">At our cat adoption organization, we are delighted to present some of our remarkable feline friends who are eagerly awaiting their forever homes. Each of these cats possesses their own unique personality, charm, and endearing qualities. Get to know them and discover the perfect companion for you.</p>
+          
+          <div>
+          <div class="grid grid-cols-1 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4 mt-12 ">
+              <div class="flex flex-col items-center p-8">
+                  <img class="w-32 h-32 bg-gray-200 rounded-full ring-4 ring-teal-300" src="http://placekitten.com/g/200/300" />
+                  <p class="h-2 mx-auto mt-6 "><span class="font-bold">Name: </span>Luna</p>
+                  <p class="h-2 mx-auto mt-4"><span class="font-bold">Breed: </span> Domestic Shorthair</p>
+                  <p class="h-2 mx-auto mt-4"><span class="font-bold">Age: </span> 2 years old</p>
+                  <p class="mt-10 mb-3 font-bold ">Description:</p>
+                  <p class="text-justify underline decoration-teal-400 decoration-4 decoration-dotted underline-offset-4 ">Luna is a playful and affectionate bundle of joy. With her sleek black fur and mesmerizing green eyes, she will capture your heart in an instant. Luna adores cuddling and enjoys interactive playtime. She would make a wonderful addition to a loving family.</p>
+              </div>
+  
+              <div class="flex flex-col items-center p-8">
+                <img class="w-32 h-32 bg-gray-200 rounded-full  ring-4 ring-teal-300" src="https://dailykitten.com/wp-content/uploads/2023/04/Prince-282x300.png" />
+                <p class="h-2 mx-auto mt-6 "><span class="font-bold">Name: </span>Oliver</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Breed: </span>  Maine Coon</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Age: </span>  3 years old</p>
+                <p class="mt-10 mb-3 font-bold ">Description:</p>
+                <p class="text-justify underline decoration-teal-400 decoration-4 decoration-dotted underline-offset-4">Meet Oliver, a majestic Maine Coon with a gentle nature. With his impressive size and luxurious fur, he is truly a regal presence. Oliver loves lounging in cozy spots and receiving gentle chin scratches. This handsome feline is seeking a calm and nurturing environment where he can be cherished.</p>
+              </div>
+  
+              <div class="flex flex-col items-center p-8">
+                <img class="w-32 h-32 bg-gray-200 rounded-full  ring-4 ring-teal-300" src="https://dailykitten.com/wp-content/uploads/2023/02/ED01918E-C28F-41E5-8BBD-46E865820AF2-300x300.jpeg" />
+                <p class="h-2 mx-auto mt-6 "><span class="font-bold">Name: </span>Bella</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Breed: </span>Siamese</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Age: </span>4 years old</p>
+                <p class="mt-10 mb-3 font-bold ">Description:</p>
+                <p class="text-justify underline decoration-teal-400 decoration-4 decoration-dotted underline-offset-4">Bella is a stunning Siamese cat with striking blue eyes and a talkative nature. She enjoys engaging in conversations and being the center of attention. Bella is an intelligent and curious companion who will bring endless entertainment and love to your home.</p>
+              </div>
+  
+              <div class="flex flex-col items-center p-8">
+                <img class="w-32 h-32 bg-gray-200 rounded-full  ring-4 ring-teal-300" src="https://placekitten.com/200/287" />
+                <p class="h-2 mx-auto mt-6 "><span class="font-bold">Name: </span>Max</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Breed: </span> Ragdoll</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Age: </span> 5 years old</p>
+                <p class="mt-10 mb-3 font-bold ">Description:</p>
+                <p class="text-justify underline decoration-teal-400 decoration-4 decoration-dotted underline-offset-4"> Max is a gentle giant with a heart full of affection. His fluffy fur and striking blue eyes are a sight to behold. Max loves to be held and snuggled, making him an ideal lap cat. If you're seeking a loving and calm companion, Max is the perfect match.</p>
+              </div>
+  
+              <div class="flex flex-col items-center p-8">
+                <img class="w-32 h-32 bg-gray-200 rounded-full  ring-4 ring-teal-300" src="https://placekitten.com/200/139" />
+                <p class="h-2 mx-auto mt-6 "><span class="font-bold">Name: </span>Luna</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Breed: </span> Domestic Shorthair</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Age: </span> 2 years old</p>
+                <p class="mt-10 mb-3 font-bold ">Description:</p>
+                <p class="text-justify underline decoration-teal-400 decoration-4 decoration-dotted underline-offset-4">Luna is a playful and affectionate bundle of joy. With her sleek black fur and mesmerizing green eyes, she will capture your heart in an instant. Luna adores cuddling and enjoys interactive playtime. She would make a wonderful addition to a loving family.</p>
+              </div>
+  
+              <div class="flex flex-col items-center p-8">
+                <img class="w-32 h-32 bg-gray-200 rounded-full  ring-4 ring-teal-300" src="https://placekitten.com/96/139" />
+                <p class="h-2 mx-auto mt-6 "><span class="font-bold">Name: </span>Luna</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Breed: </span> Domestic Shorthair</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Age: </span> 2 years old</p>
+                <p class="mt-10 mb-3 font-bold ">Description:</p>
+                <p class="text-justify underline decoration-teal-400 decoration-4 decoration-dotted underline-offset-4">Luna is a playful and affectionate bundle of joy. With her sleek black fur and mesmerizing green eyes, she will capture your heart in an instant. Luna adores cuddling and enjoys interactive playtime. She would make a wonderful addition to a loving family.</p>
+              </div>
+  
+              <div class="flex flex-col items-center p-8">
+                <img class="w-32 h-32 bg-gray-200 rounded-full  ring-4 ring-teal-300" src="https://placekitten.com/408/287" />
+                <p class="h-2 mx-auto mt-6 "><span class="font-bold">Name: </span>Luna</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Breed: </span> Domestic Shorthair</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Age: </span> 2 years old</p>
+                <p class="mt-10 mb-3 font-bold ">Description:</p>
+                <p class="text-justify underline decoration-teal-400 decoration-4 decoration-dotted underline-offset-4">Luna is a playful and affectionate bundle of joy. With her sleek black fur and mesmerizing green eyes, she will capture your heart in an instant. Luna adores cuddling and enjoys interactive playtime. She would make a wonderful addition to a loving family.</p>
+              </div>
+  
+              <div class="flex flex-col items-center p-8">
+                <img class="w-32 h-32 bg-gray-200 rounded-full  ring-4 ring-teal-300" src="https://placekitten.com/200/138" />
+                <p class="h-2 mx-auto mt-6 "><span class="font-bold">Name: </span>Luna</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Breed: </span> Domestic Shorthair</p>
+                <p class="h-2 mx-auto mt-4"><span class="font-bold">Age: </span> 2 years old</p>
+                <p class="mt-10 mb-3 font-bold ">Description:</p>
+                <p class="text-justify underline decoration-teal-400 decoration-4 decoration-dotted underline-offset-4">Luna is a playful and affectionate bundle of joy. With her sleek black fur and mesmerizing green eyes, she will capture your heart in an instant. Luna adores cuddling and enjoys interactive playtime. She would make a wonderful addition to a loving family.</p>
+              </div>
+          </div>
+          
+      </div>
+    </section>
+
+    <div class="w-5/6 xl:w-5/6 lg:w-4/6 md:w-4/6 sm:w-3/6 mx-auto mb-16">
+    <p
+      class="font-sans text-base font-normal leading-relaxed text-gray-700 antialiased text-center text-teal-600"
+    >
+    *Please note that the availability of our featured cats may vary, as they find loving homes quickly. If any of these feline friends have captured your interest, we encourage you to contact us for more information or to arrange a meet-and-greet.
+    </p>
+    </div>
+
+    <!-- Profile  -->
+    <section>
+      <div class="max-w-6xl px-6 pb-10 mx-auto">
+          <h1 class="mt-2 text-4xl font-semibold text-gray-800 lg:text-5xl heading-text">
+              Meet <br ><span class="text-teal-600 ml-12">The Founder</span> 
+          </h1>
+  
+          <main class="relative z-10 w-full mt-8 md:flex md:items-center xl:mt-12">
+              <div class="absolute w-full background-color-b -z-20 md:h-96 rounded-2xl"></div>
+              
+              <div class="w-full p-6 background-color-b md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+                  <img class="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl" src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t1.18169-9/305383_2029458177350_1822749860_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHcn4tgvrQfueu8ibe9_u_i57mgRK7RqFznuaBErtGoXG0x6ESB0yBMWTwaIQZjWaZ9eJ3mG6EX_NaAooiEK96K&_nc_ohc=JQCEg-OdilYAX8jCyrR&_nc_ht=scontent.fcrk1-3.fna&oh=00_AfDEuy2GnhA7TVr8t50TbZETBF74wNrKwyPcuLt7aKV7tw&oe=6495DF0D" alt="client photo" />
+                  
+                  <div class="mt-2 md:mx-6">
+                      <div>
+                          <p class="text-xl font-medium tracking-tight text-white">Kristel Perez Maicong</p>
+                          <p class="text-blue-100 ">Founder of Cat Adoption</p>
+                      </div>
+  
+                      <p class="mt-4 text-lg leading-relaxed text-white md:text-xl"> “Meet Kristel Perez Maicong, the founder of our cat adoption organization. With a deep passion for feline welfare and a heart full of love for cats, Kristel embarked on a mission to make a difference in the lives of these incredible creatures.
+                        ”</p>
+                 </div>
+             </div>
+          </main>
+       </div>
+    </section>
+
+
+    <h2 class="mb-2 mt-8 block font-sans text-4xl xl:text-6xl lg:text-6xl md:text-5xl font-extrabold leading-[1.3] tracking-normal text-gray-900 antialiased heading-text text-center">
+          Do you want to Donate ?
+        </h2>
+    <div class="w-5/6 xl:w-3/6 lg:w-3/6 md:w-4/6 sm:w-3/6 mx-auto my-5">
+          <p
+            class="font-sans text-base font-normal leading-relaxed text-gray-700 antialiased text-center"
+          >
+          Your generous support can change the lives of countless cats in need. By making a donation to our cat adoption organization, you directly contribute to the well-being and future of these precious feline companions. Every dollar you give helps provide essential care, medical attention, and a safe haven for cats who are waiting for their second chance at happiness.
+          </p>
+    </div>
+
+    <!-- Forms -->
+    <form class="w-3/6 mx-auto my-10">
+    <div class="relative z-0 w-full mb-6 group">
+      <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+  </div>
+  
+
+  <div class="grid md:grid-cols-2 md:gap-6">
+    <div class="relative z-0 w-full mb-6 group">
+        <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+    </div>
+    <div class="relative z-0 w-full mb-6 group">
+        <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+    </div>
+  </div>
+  <div class="grid md:grid-cols-2 md:gap-6">
+    <div class="relative z-0 w-full mb-6 group">
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+    </div>
+    <div class="relative z-0 w-full mb-6 group">
+        <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Pet Name (Ex. Scarlet)</label>
+    </div>
+  </div>
+
+  <button
+  class="select-none rounded-full bg-teal-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-600/20 transition-all hover:shadow-lg hover:shadow-green-600/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+  type="button"
+  data-ripple-light="true"
+> Submit
+</button>
+
+    </form>
+
+    <div class="mybackground-a p-2">
+    <p class="font-sans text-base font-normal leading-relaxed text-gray-700 antialiased text-center mt-5 w-3/6 mx-auto">
+          Remember, adopting a cat is a lifelong commitment filled with love, companionship, and joy. Start your journey today and give one of these extraordinary cats a forever home they truly deserve!
+    </p>
+
+
+    <p class="font-sans text-base font-normal leading-relaxed text-gray-700 antialiased text-center pb-3 mt-4 w-6/6">
+        @CatAdoption 2023. All Rights Reserved
+    </p>
+
+    <!-- Icons -->
+
+    <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+          <span class="sr-only">Facebook page</span>
+      </a>
+      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+          <span class="sr-only">Instagram page</span>
+      </a>
+      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+          <span class="sr-only">Twitter page</span>
+      </a>
+  </div>
+
+    </div>
+           
+
+    <!-- script -->
+    <!-- from cdn -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Mogra&family=Public+Sans:wght@900&display=swap");
+
+.heading-text {
+  font-family: "Public Sans", sans-serif;
+}
+
+.align-center-k {
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text-w {
+  font-family: "Mogra", cursive;
+}
+
+.browny-text {
+  color: #8f3e00;
+}
+
+.mybackground-a {
+  background-color: #fdfcdc;
+}
+
+.background-color-b {
+  background-color: #00a896;
+}
+
+.text-color-a {
+  color: #f07167;
+}
+
+.back-it {
+  z-index: 2;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
